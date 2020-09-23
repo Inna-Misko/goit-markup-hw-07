@@ -931,21 +931,20 @@ a {
   padding-top: 94px;
 }
 
-.filter-box {
+.filter__box {
   display: flex;
   justify-content: center;
 }
 
-.filter-item {
+.filter__item {
   margin-right: 8px;
 }
 
-.filter-item:last-child {
+.filter__item:last-child {
   margin-right: 0px;
 }
 
-/* button */
-.filter_btn {
+.filter__btn {
   font-family: Roboto, sans-serif;
   padding: 6px 22px;
   background: #f5f4fa;
@@ -964,8 +963,8 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter_btn:hover,
-.filter_btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--white);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -981,18 +980,18 @@ a {
   padding-bottom: 94px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
 }
 
-.portfolio-list .item {
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__list-item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -1001,20 +1000,20 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list .item:hover {
+.portfolio__list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list > .item:nth-child(3n) {
+.portfolio__list > .portfolio__list-item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.portfolio-list > .item:nth-last-child(-1n + 3) {
+.portfolio__list > .portfolio__list-item:nth-last-child(-1n + 3) {
   margin-bottom: 0px;
 }
 
-.portfolio-list .title {
+.portfolio__title {
   padding-left: 24px;
   color: var(--dark-color);
   font-weight: 700;
@@ -1024,16 +1023,16 @@ a {
   text-decoration: none;
 }
 
-.img-thumb {
+.portfolio__img-thumb {
   position: relative;
   overflow: hidden;
 }
 
-.img-thumb:hover .overlay-thumb {
+.portfolio__img-thumb:hover .portfolio__overlay-thumb {
   transform: translateY(0);
 }
 
-.overlay-thumb {
+.portfolio__overlay-thumb {
   position: absolute;
   display: block;
   padding: 63px 24px;
@@ -1047,7 +1046,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-block {
+.portfolio__text {
   margin: 0px;
   color: var(--white);
   font-size: 18px;
@@ -1055,11 +1054,8 @@ a {
   letter-spacing: 0.03em;
 }
 
-.dicription {
+.portfolio__dicription {
   padding-left: 24px;
-}
-
-.portfolio-list .dicription {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
