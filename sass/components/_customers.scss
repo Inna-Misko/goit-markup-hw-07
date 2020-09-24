@@ -6,12 +6,8 @@
     &__title {
     margin: 0px;
     margin-bottom: 50px;
-
     color: $dark-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font (36px,1.16,700, 0.03em);
     text-align: center;
     }
 

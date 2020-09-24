@@ -37,9 +37,8 @@
 &__title {
   margin: 0px;
   margin-bottom: 12px;
-  @include font (20px, 1.15, 700);
+  @include font (20px, 1.15, 700,0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: $dark-color;
 }
 

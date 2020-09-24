@@ -25,15 +25,13 @@
 }
 
 &__text {
-  @include font (14px,1.71);
-  letter-spacing: 0.03em;
+  @include font (14px,1.71,400,0.03em);
 }
 
 &__agreement {
   font-family: Roboto;
   text-decoration: underline;
   color: $accent-color;
-  @include font (14px, 1.71);
-  letter-spacing: 0.03em;
+  @include font (14px, 1.71,400,0.03em);
 }
 }
